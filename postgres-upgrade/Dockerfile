@@ -15,16 +15,6 @@ WORKDIR /home/mosip/repos/db_upgrade_scripts
 
 VOLUME /home/mosip/repos/db_upgrade_scripts/upgrade.csv
 
-COPY ./repos/commons/db_upgrade_scripts .
-COPY ./repos/pre-registration/db_upgrade_scripts .
-COPY ./repos/registration/db_upgrade_scripts .
-COPY ./repos/id-repository/db_upgrade_scripts .
-COPY ./repos/id-authentication/db_upgrade_scripts .
-COPY ./repos/partner-management-services/db_upgrade_scripts .
-COPY ./repos/admin-services/db_upgrade_scripts .
-COPY ./repos/keymanager/db_upgrade_scripts .
-COPY ./repos/audit-manager/db_upgrade_scripts .
-COPY ./repos/resident-services/db_upgrade_scripts .
 COPY ./repos/otp-manager/db_upgrade_scripts .
 
 ENV MOSIP_DB_NAME=
